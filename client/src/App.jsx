@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { DarkModeToggle } from './components';
+import FrontendRoutes from './routes';
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
     <>
       <div className={darkToggle ? "dark" : ""}>
         <DarkModeToggle toggleDark={toggleDark} />
+        <FrontendRoutes />
       </div>
     </>
   );
