@@ -5,7 +5,7 @@ import CV from '../../assets/Gokul_Abisheak_Resume.pdf'
 const Home = () => {
     return (
         <>
-            <div className='flex items-center justify-start w-100 min-h-screen dark:bg-gray-900'
+            <div id="home" className='flex items-center justify-start w-100 min-h-screen dark:bg-gray-900'
                 style={{ backgroundImage: `url(${HomeSVG})`, backgroundSize: 'auto 110vh', backgroundRepeat: 'no-repeat', backgroundPositionX: 'right', backgroundPositionY: 'top' }}>
                 <div className='hidden flex-row lg:flex'>
                     <div className='m-10'>
