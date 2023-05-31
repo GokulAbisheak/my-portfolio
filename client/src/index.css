@@ -9,12 +9,13 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    scroll-behavior: smooth;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+  font-family: 'Lexend', sans-serif;
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
