@@ -7,10 +7,12 @@ import Volunteering from './Volunteering';
 const About = () => {
     return (
         <>
-            <Introduction />
-            <Education />
-            <Honors />
-            <Volunteering />
+            <div id='about'>
+                <Introduction />
+                <Education />
+                <Honors />
+                <Volunteering />
+            </div>
         </>
     );
 }

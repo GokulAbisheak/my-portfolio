@@ -20,3 +20,8 @@ body {
   padding: 0px;
   transition-duration: 200ms;
 }
+
+.lexend-bold {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+}
