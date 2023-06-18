@@ -6,16 +6,19 @@ const Header = () => {
 
     const [bgColor, setBgColor] = useState('');
     const [textColor, setTextColor] = useState('text-neutral-50');
+    const [shadow, setShadow] = useState('')
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 0) {
+            if (window.scrollY > 80) {
                 setBgColor('bg-neutral-50 dark:bg-gray-900');
                 setTextColor('text-neutral-950 dark:text-neutral-50');
+                setShadow('new-shadow-xl');
             } else {
                 setBgColor('bg-transparent');
                 setTextColor('text-neutral-50');
+                setShadow('');
             }
         };
 
@@ -31,7 +34,7 @@ const Header = () => {
 
     return (
         <>
-            <div id='header' className={`fixed flex justify-between items-center ${bgColor} top-0 left-0 w-full h-16 z-50 px-10 max-lg:bg-neutral-50 max-lg:dark:bg-gray-900`}>
+            <div id='header' className={`fixed flex justify-between items-center ${bgColor} top-0 left-0 w-full h-16 z-50 px-10 max-lg:bg-neutral-50 max-lg:dark:bg-gray-900 ${shadow}`}>
                 <div className='text-primary dark:text-secondary text-2xl'>
                     Gokul Abisheak
                 </div>
