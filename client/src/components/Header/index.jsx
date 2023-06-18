@@ -5,17 +5,17 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
 
     const [bgColor, setBgColor] = useState('');
-    const [textColor, setTextColor] = useState('text-white');
+    const [textColor, setTextColor] = useState('text-neutral-50');
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
-                setBgColor('bg-white dark:bg-gray-900');
-                setTextColor('text-black dark:text-white');
+                setBgColor('bg-neutral-50 dark:bg-gray-900');
+                setTextColor('text-neutral-950 dark:text-neutral-50');
             } else {
                 setBgColor('bg-transparent');
-                setTextColor('text-white');
+                setTextColor('text-neutral-50');
             }
         };
 
@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <>
-            <div id='header' className={`fixed flex justify-between items-center ${bgColor} top-0 left-0 w-full h-16 z-50 px-10 max-lg:bg-white max-lg:dark:bg-gray-900`}>
+            <div id='header' className={`fixed flex justify-between items-center ${bgColor} top-0 left-0 w-full h-16 z-50 px-10 max-lg:bg-neutral-50 max-lg:dark:bg-gray-900`}>
                 <div className='text-primary dark:text-secondary text-2xl'>
                     Gokul Abisheak
                 </div>
@@ -43,14 +43,14 @@ const Header = () => {
                     <a href='#contact' className='hover:text-gray-700'>Contact</a>
 
                 </div>
-                <div className='flex lg:hidden text-gray-900 dark:text-white hover:text-primary dark:hover:text-secondary text-2xl'>
+                <div className='flex lg:hidden text-gray-900 dark:text-neutral-50 hover:text-primary dark:hover:text-secondary text-2xl'>
                     <button onClick={handleToggleMobileMenu}>
                         <FontAwesomeIcon icon={faBars} />
                     </button>
                 </div>
             </div>
             {isMobileMenuOpen && (
-                <div className='bg-neutral-200 dark:bg-gray-800 text-black dark:text-white lg:hidden fixed top-16 left-0 w-full z-50'>
+                <div className='bg-neutral-200 dark:bg-gray-800 text-neutral-950 dark:text-neutral-50 lg:hidden fixed top-16 left-0 w-full z-50'>
                     <div className='flex flex-col items-center'>
                         <a className='block py-3 hover:text-primary dark:hover:text-secondary' href='#home'>Home</a>
                         <a className='block py-3 hover:text-primary dark:hover:text-secondary' href='#about'>About</a>
