@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  transition-duration: 200ms;
+}
+
+.lexend-bold {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+}
+
+.lexend-light {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 200;
+}
