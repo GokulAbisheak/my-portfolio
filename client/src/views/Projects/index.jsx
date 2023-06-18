@@ -8,7 +8,7 @@ const Projects = () => {
 
     useEffect(() => {
         const fetchRepos = async () => {
-            const res = await fetch(`http://api.github.com/users/GokulAbisheak/repos?page=1&per_page=12&sort=created`);
+            const res = await fetch(`https://api.github.com/users/GokulAbisheak/repos?page=1&per_page=12&sort=created`);
             const data = await res.json()
             setRepos(data);
         }
