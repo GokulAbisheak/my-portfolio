@@ -23,7 +23,7 @@ const Projects = () => {
                 </h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
                     {repo.map((item) => (
-                        <div className='min-w-80 bg-neutral-100 dark:bg-gray-800 text-neutral-900 dark:text-neutral-50 m-4 p-5 new-shadow-md rounded'>
+                        <div className='min-w-80 bg-neutral-100 dark:bg-gray-800 text-neutral-900 dark:text-neutral-50 m-4 p-5 new-shadow-md rounded border-2 border-primary dark:border-secondary'>
                             <div className='lexend-bold flex items-center mb-4'>
                                 <div className='h-10 w-10 rounded-full overflow-hidden mr-4'>
                                     <img src={item.owner.avatar_url} className='contain' />
