@@ -4,7 +4,7 @@ import EducationData from '../../../data/EducationData';
 const Education = () => {
     return (
         <>
-            <div id='education' className='flex flex-col items-center min-h-screen bg-white dark:bg-gray-900 pt-20'>
+            <div id='education' className='flex flex-col items-center min-h-screen bg-neutral-50 dark:bg-gray-900 pt-20'>
                 <h1 className='text-4xl lexend-bold text-primary dark:text-secondary mb-8'>
                     Education
                 </h1>
