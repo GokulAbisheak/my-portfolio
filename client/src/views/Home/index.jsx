@@ -19,7 +19,7 @@ const Home = () => {
                                 Software Engineering Undergraduate at SLIIT
                             </div>
                             <a href={CV} download='Gokul-Abisheak-Srirajan-CV'>
-                                <button className='text-neutral-50 bg-gradient-to-r from-primary to-secondary mt-2 px-10 py-4 rounded'>
+                                <button className='text-neutral-50 bg-gradient-to-r from-primary to-secondary mt-2 px-10 py-4 rounded hover:scale-110 transition duration-200 ease-in-out'>
                                     DOWNLOAD CV
                                 </button>
                             </a>

@@ -11,7 +11,7 @@ const Skills = () => {
                 <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 justify-center items-center text-center text-neutral-950 dark:text-neutral-50'>
                     {SkillData.map((item) => (
                         <div className='m-4'>
-                            <div className='w-24 h-24 rounded-full bg-neutral-100 flex items-center justify-center dark:bg-gray-800 mb-2 new-shadow-md'>
+                            <div className='w-24 h-24 rounded-full bg-neutral-100 flex items-center justify-center dark:bg-gray-800 mb-2 new-shadow-md hover:scale-110 transition duration-200 ease-in-out'>
                                 <img src={item.image} className='contain' style={{ maxWidth: '60%', maxHeight: '60%' }} />
                             </div>
                             {item.name}
