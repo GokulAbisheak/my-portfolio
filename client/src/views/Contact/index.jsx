@@ -72,10 +72,10 @@ const Contact = () => {
                 <div className='grid grid-cols-4'>
                     {ContactData.map((item) => (
                         <a href={item.link} target="_blank">
-                            <div className='p-4 text-center text-neutral-900 dark:text-neutral-50'>
+                            <div className='p-4 text-center text-neutral-900 dark:text-neutral-50 hover:scale-125 transition ease-in-out duration-200'>
                                 {<item.icon className='mx-4' style={{ fontSize: '50px' }} />}
                                 <br />
-                                {item.name}
+                                {/* {item.name} */}
                             </div>
                         </a>
                     ))}
@@ -95,7 +95,7 @@ const Contact = () => {
                             {error.message}
                         </div>
                         <div className='w-full'>
-                            <button type='submit' className='flex float-right py-2 px-4 mt-2 bg-primary dark:bg-secondary text-neutral-50 w-32 rounded-full text-left items-center justify-between'>
+                            <button type='submit' className='flex float-right py-2 px-4 mt-2 bg-primary dark:bg-secondary text-neutral-50 w-32 rounded-full text-left items-center justify-between hover:scale-105 hover:shadow-lg transition duration-200 ease-in-out'>
                                 Send <FontAwesomeIcon className='text-neutral-50' icon={faArrowRight} />
                             </button>
                         </div>

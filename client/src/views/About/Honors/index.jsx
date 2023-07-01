@@ -8,7 +8,7 @@ const Honors = () => {
                 <h1 className='text-4xl lexend-bold text-primary dark:text-secondary mb-8'>
                     Honors and Awards
                 </h1>
-                <div className='flex flex-row drop-shadow-xl bg-neutral-50 dark:bg-gray-800 p-5 mx-4 new-shadow-xl' style={{ maxWidth: '500px', backgroundImage: `url(${Colors})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className='flex flex-row drop-shadow-xl bg-neutral-50 dark:bg-gray-800 p-5 mx-4 new-shadow-xl hover:scale-105 transition duration-200 ease-in-out' style={{ maxWidth: '500px', backgroundImage: `url(${Colors})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="absolute top-0 left-0 w-full h-full bg-neutral-950 opacity-80 z-0"></div>
                     <div className='z-10'>
                         <div className='text-secondary lexend-bold'>

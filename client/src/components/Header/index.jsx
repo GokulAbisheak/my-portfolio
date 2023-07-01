@@ -39,11 +39,11 @@ const Header = () => {
                     Gokul Abisheak
                 </div>
                 <div className={`hidden lg:flex text-base space-x-8 ${textColor}`}>
-                    <a href='#home' className='hover:text-gray-700'>Home</a>
-                    <a href='#about' className='hover:text-gray-700'>About</a>
-                    <a href='#skills' className='hover:text-gray-700'>Skills</a>
-                    <a href='#project' className='hover:text-gray-700'>Project</a>
-                    <a href='#contact' className='hover:text-gray-700'>Contact</a>
+                    <a href='#home' className='hover:scale-125 transition duration-200 ease-in-out'>Home</a>
+                    <a href='#about' className='hover:scale-125 transition duration-200 ease-in-out'>About</a>
+                    <a href='#skills' className='hover:scale-125 transition duration-200 ease-in-out'>Skills</a>
+                    <a href='#project' className='hover:scale-125 transition duration-200 ease-in-out'>Project</a>
+                    <a href='#contact' className='hover:scale-125 transition duration-200 ease-in-out'>Contact</a>
 
                 </div>
                 <div className='flex lg:hidden text-gray-900 dark:text-neutral-50 hover:text-primary dark:hover:text-secondary text-2xl'>
