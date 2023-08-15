@@ -5,7 +5,7 @@ const Volunteering = () => {
     return (
         <>
             <div id='volunteering' className='flex flex-col items-center min-h-screen bg-neutral-50 dark:bg-gray-900 pt-20'>
-                <h1 className='text-4xl lexend-bold text-primary dark:text-secondary mb-8'>
+                <h1 className='text-4xl font-semibold text-primary dark:text-secondary mb-8'>
                     Volunteering
                 </h1>
                 <div className='flex flex-col bg-neutral-50 dark:bg-gray-800 text-neutral-950 dark:text-neutral-50 border-2 border-primary dark:border-secondary new-shadow-xl mx-4'>
@@ -18,10 +18,10 @@ const Volunteering = () => {
                                 <div>
                                     {list.position}
                                 </div>
-                                <div className='lexend-light'>
+                                <div className='font-extralight'>
                                     {list.club}
                                 </div>
-                                <div className='lexend-light'>
+                                <div className='font-extralight'>
                                     {list.duration}
                                 </div>
                             </div>

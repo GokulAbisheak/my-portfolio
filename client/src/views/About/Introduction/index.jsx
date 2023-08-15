@@ -5,7 +5,7 @@ const Introduction = () => {
     return (
         <>
             <div className='flex flex-col items-center min-h-screen bg-neutral-50 dark:bg-gray-900 pt-20'>
-                <h1 className='text-4xl lexend-bold text-primary dark:text-secondary mb-8'>
+                <h1 className='text-4xl font-semibold text-primary dark:text-secondary mb-8'>
                     About Me
                 </h1>
                 <div className='rounded-full overflow-hidden' style={{ width: '250px', height: '250px' }}>
