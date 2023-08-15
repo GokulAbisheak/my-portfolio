@@ -18,7 +18,7 @@ const Projects = () => {
     return (
         <>
             <div id='project' className='flex flex-col items-center min-h-screen bg-neutral-50 dark:bg-gray-900 pt-20'>
-                <h1 className='text-4xl lexend-bold text-primary dark:text-secondary mb-2'>
+                <h1 className='text-4xl font-semibold text-primary dark:text-secondary mb-2'>
                     Project
                 </h1>
                 <div className='text-neutral-950 dark:text-neutral-50 mb-8'>
@@ -28,13 +28,13 @@ const Projects = () => {
                     {repo.map((item) => (
                         <a href={item.html_url}>
                             <div className='min-w-80 bg-neutral-100 dark:bg-gray-800 text-neutral-900 dark:text-neutral-50 m-4 p-5 new-shadow-md rounded border-2 border-primary dark:border-secondary hover:scale-105 transition duration-200 ease-in-out'>
-                                <div className='lexend-bold flex items-center mb-4'>
+                                <div className='font-semibold flex items-center mb-4'>
                                     <div className='h-10 w-10 rounded-full overflow-hidden mr-4'>
                                         <img src={item.owner.avatar_url} className='contain' />
                                     </div>
                                     {item.owner.login}
                                 </div>
-                                <div className='lexend-light mb-4'>
+                                <div className='font-extralight mb-4'>
                                     {item.name}
                                     {/* <a href={item.html_url} className='ml-2'>
                                         <FontAwesomeIcon className='text-neutral-900 dark:text-neutral-50' icon={faLink} />
@@ -43,14 +43,14 @@ const Projects = () => {
                                         {item.visibility}
                                     </span>
                                 </div>
-                                <div className='lexend-light'>
+                                <div className='font-extralight'>
                                     <FontAwesomeIcon className='text-amber-400' icon={faStar} /> Stars - {item.stargazers_count}
                                 </div>
-                                <div className='lexend-light'>
+                                <div className='font-extralight'>
                                     <FontAwesomeIcon className='text-sky-600' icon={faEye} /> Watchers - {item.watchers_count}
                                 </div>
                                 <div className='mt-4'>
-                                    {item.language != null ? <span className='lexend-bold text-sm bg-primary dark:bg-secondary px-2 py-1 rounded-full text-neutral-50'>
+                                    {item.language != null ? <span className='font-semibold text-sm bg-primary dark:bg-secondary px-2 py-1 rounded-full text-neutral-50'>
                                         {item.language}
                                     </span> : ''}
                                 </div>

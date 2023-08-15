@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeSVG from '../../assets/home.png'
 import CV from '../../assets/Gokul_Abisheak_Resume.pdf'
+import Typed from 'react-typed'
 
 const Home = () => {
     return (
@@ -16,7 +17,14 @@ const Home = () => {
                                 Gokul Abisheak
                             </div>
                             <div className='text-2xl dark:text-neutral-50 mb-2'>
-                                Software Engineering Undergraduate at SLIIT
+                                <Typed
+                                strings={[
+                                    "Software Engineering Undergraduate at SLIIT",
+                                    "Full-Stack Developer"]}
+                                 typeSpeed={100}
+                                 backSpeed={20}
+                                 loop >
+                                </Typed>
                             </div>
                             <a href={CV} download='Gokul-Abisheak-Srirajan-CV'>
                                 <button className='text-neutral-50 bg-gradient-to-r from-primary to-secondary mt-2 px-10 py-4 rounded hover:scale-110 transition duration-200 ease-in-out'>

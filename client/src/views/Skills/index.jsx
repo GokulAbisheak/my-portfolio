@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         <>
             <div id='skills' className='flex flex-col items-center min-h-screen bg-neutral-50 dark:bg-gray-900 pt-20'>
-                <h1 className='text-4xl lexend-bold text-primary dark:text-secondary mb-8'>
+                <h1 className='text-4xl font-semibold text-primary dark:text-secondary mb-8'>
                     Skills
                 </h1>
                 <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 justify-center items-center text-center text-neutral-950 dark:text-neutral-50'>
